@@ -19,6 +19,7 @@ import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 AOS.init();
 
@@ -39,7 +40,25 @@ function App() {
       {/* Fixed Navigation Buttons */}
       <div className='flex justify-center'>
         <div className='h-14 w-full mx-auto rounded-full bottom-0 fixed z-50 max-w-lg backdrop-blur-sm border-2 border-pink-800 flex items-center justify-evenly'>
-          <button className={`text-2xl ${activeButton === "navbar" ? "text-pink-600" : "text-white"
+          <Link className='link' to='navbar' smooth={true} spy={true} duration={1000} activeClass='active'>
+            <IoHome />
+          </Link>
+          <Link className='link' to='about' smooth={true} spy={true} duration={1000} activeClass='active'>
+            <MdOutlinePerson4 />
+          </Link>
+          <Link className='link' to='skills' smooth={true} spy={true} duration={1000} activeClass='active'>
+            <SiHyperskill />
+          </Link>
+          <Link className='link' to='projects' smooth={true} spy={true} duration={1000} activeClass='active'>
+            <IoBagHandleOutline />
+          </Link>
+          <Link className='link' to='education' smooth={true} spy={true} duration={1000} activeClass='active'>
+            <FaUserGraduate />
+          </Link>
+          <Link className='link' to='contact' smooth={true} spy={true} duration={1000} activeClass='active'>
+            <LuMessageSquareMore />
+          </Link>
+          {/* <button className={`text-2xl ${activeButton === "navbar" ? "text-pink-600" : "text-white"
             }`} onClick={() => scrollToSection('navbar')}>
             <IoHome />
           </button>
@@ -62,7 +81,7 @@ function App() {
           <button className={`text-2xl ${activeButton === "contact" ? "text-pink-600" : "text-white"
             }`} onClick={() => scrollToSection('contact')}>
             <LuMessageSquareMore />
-          </button>
+          </button> */}
         </div>
       </div>
 
@@ -78,7 +97,7 @@ function App() {
           <a href='https://mail.google.com/mail/u/0/#inbox' target="_blank" rel="noopener noreferrer">
             <div className='cursor-pointer flex-1 flex items-center gap-[60px] bg-pink-800 p-2 transform -translate-x-24 duration-500 hover:translate-x-0'>Email <AiOutlineMail className='text-xl' /></div>
           </a>
-          <a href='https://www.facebook.com/' target="_blank" rel="noopener noreferrer">
+          <a href='https://www.facebook.com/rakibul.hasan.7424/' target="_blank" rel="noopener noreferrer">
             <div className='cursor-pointer flex-1 flex items-center gap-[31px] bg-pink-800 p-2 transform -translate-x-24 duration-500 hover:translate-x-0'>Facebook <FaFacebook className='text-xl' /></div>
           </a>
         </div>

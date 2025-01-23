@@ -5,7 +5,7 @@ import { IoMdSend } from "react-icons/io";
 
 const Contact = () => {
     return (
-        <div className="mt-10 mb-80">
+        <div className="mt-10 mb-12">
             <h3 className='text-center text-4xl font-extrabold mb-8'>Contact Me<span className="text-pink-800 font-extrabold">_</span></h3>
             <p className="text-center mb-20">I'm always open to discussing new projects,
                 <br />
