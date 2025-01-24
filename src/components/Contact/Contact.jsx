@@ -4,6 +4,7 @@ import { TiMail } from "react-icons/ti";
 import { IoMdSend } from "react-icons/io";
 
 const Contact = () => {
+
     return (
         <div className="mt-10 mb-12">
             <h3 className='text-center text-4xl font-extrabold mb-8'>Contact Me<span className="text-pink-800 font-extrabold">_</span></h3>
@@ -14,7 +15,7 @@ const Contact = () => {
             <div className="grid gap-4 md:grid-cols-2">
                 {/* 1st  */}
                 <div className="space-y-10 md:mt-9">
-                    <div className="flex gap-4">    
+                    <div className="flex gap-4">
                         <p className="bg-gradient-to-r from-indigo-800 to-pink-800 p-3 text-2xl font-bold rounded-md text-white"><GrLocation /></p>
                         <div>
                             <p className="font-semibold">Address</p>
@@ -44,7 +45,7 @@ const Contact = () => {
                                 type="text"
                                 id="name"
                                 placeholder=" "
-                                className="peer w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
+                                className="peer w-full text-black p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required
                             />
                             <label
@@ -59,7 +60,7 @@ const Contact = () => {
                                 type="email"
                                 id="email"
                                 placeholder=" "
-                                className="peer w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
+                                className="peer w-full p-3 pt-6 border text-black border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required
                             />
                             <label
@@ -74,7 +75,7 @@ const Contact = () => {
                                 type="text"
                                 id="message"
                                 placeholder=" "
-                                className="peer text-pink-500 w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
+                                className="peer w-full text-black p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required
                             >
                             </textarea>

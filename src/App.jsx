@@ -18,44 +18,33 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
-import { useState } from 'react';
 import { Link } from 'react-scroll';
 
 AOS.init();
 
 function App() {
-  const [activeButton, setActiveButton] = useState("home");
-
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-    setActiveButton(id);
-  };
-
 
   return (
     <div className='max-w-6xl mx-auto p-4'>
-      {/* Fixed Navigation Buttons */}
+      
       <div className='flex justify-center'>
         <div className='h-14 w-full mx-auto rounded-full bottom-0 fixed z-50 max-w-lg backdrop-blur-sm border-2 border-pink-800 flex items-center justify-evenly'>
-          <Link className='link' to='navbar' smooth={true} spy={true} duration={1000} activeClass='active'>
+          <Link className='link text-2xl' to='navbar' smooth={true} spy={true} duration={1000} activeClass='active'>
             <IoHome />
           </Link>
-          <Link className='link' to='about' smooth={true} spy={true} duration={1000} activeClass='active'>
+          <Link className='link text-2xl' to='about' smooth={true} spy={true} duration={1000} activeClass='active'>
             <MdOutlinePerson4 />
           </Link>
-          <Link className='link' to='skills' smooth={true} spy={true} duration={1000} activeClass='active'>
+          <Link className='link text-2xl' to='skills' smooth={true} spy={true} duration={1000} activeClass='active'>
             <SiHyperskill />
           </Link>
-          <Link className='link' to='projects' smooth={true} spy={true} duration={1000} activeClass='active'>
+          <Link className='link text-2xl' to='projects' smooth={true} spy={true} duration={1000} activeClass='active'>
             <IoBagHandleOutline />
           </Link>
-          <Link className='link' to='education' smooth={true} spy={true} duration={1000} activeClass='active'>
+          <Link className='link text-2xl' to='education' smooth={true} spy={true} duration={1000} activeClass='active'>
             <FaUserGraduate />
           </Link>
-          <Link className='link' to='contact' smooth={true} spy={true} duration={1000} activeClass='active'>
+          <Link className='link text-2xl' to='contact' smooth={true} spy={true} duration={1000} activeClass='active'>
             <LuMessageSquareMore />
           </Link>
           {/* <button className={`text-2xl ${activeButton === "navbar" ? "text-pink-600" : "text-white"

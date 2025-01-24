@@ -3,10 +3,11 @@ import img from '../../assets/animation.json';
 
 const About = () => {
     return (
-        <div className="flex sm:flex-row flex-col-reverse sm:items-start items-center mt-10 gap-10 space-y-7">
+        <div className="flex md:flex-row  flex-col-reverse sm:items-start md:items-center mt-10 gap-10 space-y-7">
             {/* width="640" height="360" */}
-            <div className="mx-auto w-7/12 md:w-10/12">
-                <Lottie animationData={img}>
+            {/* w-7/12 md:w-10/12 */}
+            <div className="">
+                <Lottie className="w-full" animationData={img}>
                 </Lottie>
             </div>
             <div className='flex-grow'>

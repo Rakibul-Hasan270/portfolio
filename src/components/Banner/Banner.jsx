@@ -8,14 +8,14 @@ const Banner = () => {
     return (
         <div className="md:flex justify-between items-center mt-10 gap-4 space-y-10">
             <div className="flex-grow space-y-5">
-                <h3 className="text-4xl font-bold text-center md:text-start">I'm Rakibul Hasan</h3>
+                <h3 className="text-5xl font-bold text-center md:text-start">I'm Rakibul Hasan</h3>
                 {/* <p className="text-xl md:text-3xl font-semibold text-center md:text-start">a Web Developer</p> */}
 
-                <div className="flex justify-center md:justify-start">
+                <div className="flex justify-center md:justify-start"><span className="text-2xl mr-3">a</span>
                     <TypeAnimation className="text-pink-600 text-2xl font-semibold"
                         sequence={[
                             // Same substring at the start will only be typed once, initially
-                            'Front-End Developer',
+                            'Frontend Developer',
                             1000,
                             'React Developer',
                             1000

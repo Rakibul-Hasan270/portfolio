@@ -10,11 +10,11 @@ const ProjectShowcase = () => {
 
             <div className="md:flex gap-5">
                 {/* card-1  */}
-                <div className="p-5 border border-pink-800 hover:border hover:border-white group">
+                <div className="p-5 border border-pink-800 hover:border hover:border-white group flex-1">
                     <div
-                        className="h-[250px]  relative transition-all duration-[2000ms] ease-in-out  w-full bg-cover flex justify-end gap-4 bg-top group-hover:bg-bottom"
+                        className="h-[250px]  relative transition-all duration-[1500ms] ease-in-out  w-full bg-cover flex justify-end gap-4 bg-top group-hover:bg-bottom"
                         style={{
-                            backgroundImage: `url('https://i.ibb.co.com/TMsXrh8/fe6911dc-3af4-4347-8b05-afb4bfbfa3f3.jpg')`,
+                            backgroundImage: `url('https://i.ibb.co.com/PNBZMS1/Career-Hub-01-24-2025-07-33-PM.png')`,
                         }}
                     ></div>
                     <div>
@@ -39,10 +39,13 @@ const ProjectShowcase = () => {
                 </div>
 
                 {/* card-2  */}
-                <div className="p-5 border border-pink-800 hover:border hover:border-white">
-                    <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                <div className="p-5 border border-pink-800 hover:border hover:border-white group flex-1">
+                    <div
+                        className="h-[250px]  relative transition-all duration-[1500ms] ease-in-out  w-full bg-cover flex justify-end gap-4 bg-top group-hover:bg-bottom"
+                        style={{
+                            backgroundImage: `url('https://i.ibb.co.com/wNgKwD3/Book-Vibe-Home-01-24-2025-07-39-PM.png')`,
+                        }}
+                    ></div>
                     <div>
                         <h2 className="border-b pb-3 mb-4 mt-3"><span className="text-xl font-semibold">Books Vibe</span> - Buying books</h2>
                         <div className="flex flex-wrap gap-2 border-b pb-3">
