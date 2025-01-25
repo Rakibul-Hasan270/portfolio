@@ -47,30 +47,6 @@ function App() {
           <Link className='link text-2xl' to='contact' smooth={true} spy={true} duration={1000} activeClass='active'>
             <LuMessageSquareMore />
           </Link>
-          {/* <button className={`text-2xl ${activeButton === "navbar" ? "text-pink-600" : "text-white"
-            }`} onClick={() => scrollToSection('navbar')}>
-            <IoHome />
-          </button>
-          <button className={`text-2xl ${activeButton === "about" ? "text-pink-600" : "text-white"
-            }`} onClick={() => scrollToSection('about')}>
-            <MdOutlinePerson4 />
-          </button>
-          <button className={`text-2xl ${activeButton === "skills" ? "text-pink-600" : "text-white"
-            }`} onClick={() => scrollToSection('skills')}>
-            <SiHyperskill />
-          </button>
-          <button className={`text-2xl ${activeButton === "projects" ? "text-pink-600" : "text-white"
-            }`} onClick={() => scrollToSection('projects')}>
-            <IoBagHandleOutline />
-          </button>
-          <button className={`text-2xl ${activeButton === "education" ? "text-pink-600" : "text-white"
-            }`} onClick={() => scrollToSection('education')}>
-            <FaUserGraduate />
-          </button>
-          <button className={`text-2xl ${activeButton === "contact" ? "text-pink-600" : "text-white"
-            }`} onClick={() => scrollToSection('contact')}>
-            <LuMessageSquareMore />
-          </button> */}
         </div>
       </div>
 
@@ -86,7 +62,7 @@ function App() {
           <a href='https://mail.google.com/mail/u/0/#inbox' target="_blank" rel="noopener noreferrer">
             <div className='cursor-pointer flex-1 flex items-center gap-[60px] bg-pink-800 p-2 transform -translate-x-24 duration-500 hover:translate-x-0'>Email <AiOutlineMail className='text-xl' /></div>
           </a>
-          <a href='https://www.facebook.com/rakibul.hasan.7424/' target="_blank" rel="noopener noreferrer">
+          <a href='https://www.facebook.com/rakibul.hasan.7424' target="_blank" rel="noopener noreferrer">
             <div className='cursor-pointer flex-1 flex items-center gap-[31px] bg-pink-800 p-2 transform -translate-x-24 duration-500 hover:translate-x-0'>Facebook <FaFacebook className='text-xl' /></div>
           </a>
         </div>
