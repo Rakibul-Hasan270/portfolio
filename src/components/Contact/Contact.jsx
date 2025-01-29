@@ -82,6 +82,7 @@ const Contact = () => {
                         <div className="relative mb-4">
                             <input
                                 type="text"
+                                 id="name"
                                 name="from_name"
                                 placeholder=" "
                                 className="peer w-full text-pink-600 p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
@@ -97,6 +98,7 @@ const Contact = () => {
                         <div className="relative mb-4">
                             <input
                                 type="email"
+                                id="email"
                                 name="from_email"
                                 placeholder=" "
                                 className="peer w-full p-3 pt-6 border text-pink-600 border-pink-800 rounded-md outline-none focus:border-gray-500"
@@ -112,6 +114,7 @@ const Contact = () => {
                         <div className="relative mb-4">
                             <textarea
                                 type="text"
+                                id="message"
                                 name="message"
                                 placeholder=" "
                                 className="peer w-full text-pink-600 p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
