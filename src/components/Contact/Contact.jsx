@@ -2,8 +2,47 @@ import { GrLocation } from "react-icons/gr";
 import { MdOutlinePhone } from "react-icons/md";
 import { TiMail } from "react-icons/ti";
 import { IoMdSend } from "react-icons/io";
+import Swal from "sweetalert2";
+import { useRef } from "react";
 
 const Contact = () => {
+
+    const form = useRef();
+
+
+    const sendEmail = async (e) => {
+        e.preventDefault();
+        // setLoading(true);
+
+        const formData = {
+            from_name: form.current.from_name.value,
+            from_email: form.current.from_email.value,
+            message: form.current.message.value,
+        };
+
+        try {
+            const response = await fetch("http://localhost:5000/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                Swal.fire("Success!", "Your message has been sent.", "success");
+                form.current.reset();
+            } else {
+                Swal.fire("Error!", data.error, "error");
+            }
+        } catch (error) {
+            Swal.fire("Error!", "Failed to send message.", error);
+        } finally {
+            // setLoading(false);
+        }
+    };
 
     return (
         <div className="mt-10 mb-12">
@@ -39,11 +78,11 @@ const Contact = () => {
                 </div>
                 {/* 2nd  */}
                 <div>
-                    <form action="" method="get" className="">
+                    <form ref={form} onSubmit={sendEmail} className="">
                         <div className="relative mb-4">
                             <input
                                 type="text"
-                                id="name"
+                                name="from_name"
                                 placeholder=" "
                                 className="peer w-full text-pink-600 p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required
@@ -58,7 +97,7 @@ const Contact = () => {
                         <div className="relative mb-4">
                             <input
                                 type="email"
-                                id="email"
+                                name="from_email"
                                 placeholder=" "
                                 className="peer w-full p-3 pt-6 border text-pink-600 border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required
@@ -73,7 +112,7 @@ const Contact = () => {
                         <div className="relative mb-4">
                             <textarea
                                 type="text"
-                                id="message"
+                                name="message"
                                 placeholder=" "
                                 className="peer w-full text-pink-600 p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required

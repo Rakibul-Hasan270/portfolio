@@ -91,7 +91,7 @@ const ProjectShowcase = () => {
                                 <button className="text-white  py-2 flex justify-center items-center gap-2">Github <LuGithub /></button>
                             </Link>
 
-                            <Link to={'https://rakibul-hasan270.github.io/alpha-clash/'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
+                            <Link to={'https://loquacious-pegasus-97324b.netlify.app/'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
                                 <button className="text-white  py-2 flex justify-center items-center gap-2">Live View  <FaArrowUpRightFromSquare /></button>
                             </Link>
                         </div>
@@ -120,7 +120,7 @@ const ProjectShowcase = () => {
                                 <button className="text-white  py-2 flex justify-center items-center gap-2">Github <LuGithub /></button>
                             </Link>
 
-                            <Link to={'https://rakibul-hasan270.github.io/retro_forum/'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
+                            <Link to={'https://rakibul-hasan270.github.io/retro_forum/  '} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
                                 <button className="text-white  py-2 flex justify-center items-center gap-2">Live View  <FaArrowUpRightFromSquare /></button>
                             </Link>
                         </div>
