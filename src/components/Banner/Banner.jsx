@@ -6,19 +6,19 @@ import { TypeAnimation } from "react-type-animation";
 const Banner = () => {
     const notify = () => toast("The resume has been downloaded.");
     return (
-        <div className="md:flex justify-between items-center mt-10 gap-4 space-y-10">
+        <div className="md:flex justify-between items-center mt-10 gap-4 space-y-16">
             <div className="flex-grow space-y-5">
                 <h3 className="text-5xl font-bold text-center md:text-start">I'm Rakibul Hasan</h3>
-                {/* <p className="text-xl md:text-3xl font-semibold text-center md:text-start">a Web Developer</p> */}
 
                 <div className="flex justify-center md:justify-start"><span className="text-2xl mr-3">a</span>
-                    <TypeAnimation className="text-pink-600 text-2xl font-semibold"
+                    <TypeAnimation className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-2xl font-semibold"
                         sequence={[
-                            // Same substring at the start will only be typed once, initially
-                            'Frontend Developer',
+                            'MERN Stack Developer',
                             1000,
                             'React Developer',
-                            1000
+                            1000,
+                            'Frontend Developer',
+                            1000,
                         ]}
                         speed={50}
                         style={{ fontSize: '2em' }}

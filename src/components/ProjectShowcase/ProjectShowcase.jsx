@@ -6,7 +6,7 @@ import { Link } from "react-router";
 const ProjectShowcase = () => {
     return (
         <div className="mt-10">
-            <h3 className='text-center text-4xl font-extrabold mb-8'>Projects Showcase<span className="text-pink-800 font-extrabold">_</span></h3>
+            <h3 className='text-center text-3xl md:text-5xl font-extrabold mb-16'>Projects Showcase<span className="text-pink-800 font-extrabold">_</span></h3>
 
             <div className="md:flex gap-5 mb-5">
                 {/* card-1  */}

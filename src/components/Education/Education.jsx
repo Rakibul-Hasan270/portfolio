@@ -1,8 +1,8 @@
 
 const Education = () => {
     return (
-        <div className="mt-10">
-            <h3 className='text-center text-4xl font-extrabold mb-8'>Education & Courses<span className="text-pink-800 font-extrabold">_</span></h3>
+        <div className="mt-32">
+            <h3 className='text-center text-3xl md:text-5xl font-extrabold mb-16'>Education & Courses<span className="text-pink-800 font-extrabold">_</span></h3>
             {/* first  */}
             <div data-aos="fade-up" data-aos-duration="500" className="flex gap-10">
                 <div className="flex-1 space-y-2">

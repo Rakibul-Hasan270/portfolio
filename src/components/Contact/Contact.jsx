@@ -3,16 +3,16 @@ import { MdOutlinePhone } from "react-icons/md";
 import { TiMail } from "react-icons/ti";
 import { IoMdSend } from "react-icons/io";
 import Swal from "sweetalert2";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const Contact = () => {
-
+    const [loading, setLoading] = useState(false);
     const form = useRef();
 
 
     const sendEmail = async (e) => {
         e.preventDefault();
-        // setLoading(true);
+        setLoading(true);
 
         const formData = {
             from_name: form.current.from_name.value,
@@ -40,13 +40,13 @@ const Contact = () => {
         } catch (error) {
             Swal.fire("Error!", "Failed to send message.", error);
         } finally {
-            // setLoading(false);
+            setLoading(false);
         }
     };
 
     return (
-        <div className="mt-10 mb-12">
-            <h3 className='text-center text-4xl font-extrabold mb-8'>Contact Me<span className="text-pink-800 font-extrabold">_</span></h3>
+        <div className="my-32">
+            <h3 className='text-center text-3xl md:text-5xl font-extrabold mb-8'>Contact Me<span className="text-pink-800 font-extrabold">_</span></h3>
             <p className="text-center mb-20">I'm always open to discussing new projects,
                 <br />
                 creative ideas, or opportunities to be part of your vision. Feel free to reach out!</p>
@@ -82,7 +82,7 @@ const Contact = () => {
                         <div className="relative mb-4">
                             <input
                                 type="text"
-                                 id="name"
+                                id="name"
                                 name="from_name"
                                 placeholder=" "
                                 className="peer w-full text-pink-600 p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
@@ -129,12 +129,13 @@ const Contact = () => {
                             </label>
                         </div>
 
-                        <button className="flex items-center justify-center gap-4 bg-gradient-to-r from-indigo-800 to-pink-800 hover:from-pink-800 hover:to-indigo-800 text-white py-2 w-full"><IoMdSend></IoMdSend> Send Message</button>
+                        <button disabled={loading} className="flex items-center justify-center gap-4 bg-gradient-to-r from-indigo-800 to-pink-800 hover:from-pink-800 hover:to-indigo-800 text-white py-2 w-full">{loading ? <span className="loading loading-spinner text-warning"></span>
+                            : <IoMdSend></IoMdSend>}Sent Message</button>
                     </form>
-                </div>
+                </div >
 
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 
