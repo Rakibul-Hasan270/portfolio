@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 
 const SkillsNxt = () => {
     const skills = [
-        { src: "https://i.postimg.cc/FFG9wQP4/react.png", alt: "React" },
+        { src: "https://i.ibb.co.com/GfH2cc7s/download-1-removebg-preview.png", alt: "React" },
         { src: "https://i.ibb.co.com/6JT6JpqC/download.png", alt: "js" },
-        { src: "https://i.ibb.co.com/ymmCcTnW/download-2.png", alt: "node" },
-        { src: "https://i.ibb.co.com/LX5t5vBd/download-3.png", alt: "express" },
-        { src: "https://i.ibb.co.com/KjCZbmq9/download-4.png", alt: "mongoDB" },
-        { src: "https://i.postimg.cc/zB8rPdKv/Firebase.png", alt: "Firebase" },
+        { src: "https://i.ibb.co.com/N67zHmXS/download-2-removebg-preview.png", alt: "node" },
+        { src: "https://i.ibb.co.com/fdMjGt77/download-3-removebg-preview.png", alt: "express" },
+        { src: "https://i.ibb.co.com/MWHjffs/download-4-removebg-preview.png", alt: "mongoDB" },
         { src: "https://i.postimg.cc/C5JL432w/Tailwind.png", alt: "Tailwind CSS" },
-        { src: "https://i.postimg.cc/Wz9TZMD3/Figma.png", alt: "Figma" },
-        { src: "https://i.postimg.cc/FHkNfkhr/htnl5.png", alt: "HTML5" },
+        { src: "https://i.ibb.co.com/JFW5KnkN/download-6-removebg-preview.png", alt: "HTML5" },
+        { src: "https://i.ibb.co.com/XQskyNQ/download-6-removebg-preview-1.png", alt: "CSS3" },
+        { src: "https://i.ibb.co.com/6c0NKJrf/download-7-removebg-preview.png", alt: "Firebase" },
+        { src: "https://i.ibb.co.com/mC3t0Xqk/download-5-removebg-preview.png", alt: "MI" },
         { src: "https://i.postimg.cc/DyM7yPkp/github.png", alt: "GitHub" },
-        { src: "https://i.postimg.cc/DyM7yPkp/github.png", alt: "GitHub" },
-        { src: "https://i.postimg.cc/DyM7yPkp/github.png", alt: "GitHub" },
+        { src: "https://i.ibb.co.com/5WjK37kf/images-removebg-preview.png", alt: "Figma" },
     ];
 
     return (
@@ -24,7 +24,7 @@ const SkillsNxt = () => {
             </h3>
 
             {/* Grid Layout: 2 rows x 6 columns */}
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-6 place-items-center max-w-[650px] mx-auto">
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-6 place-items-center max-w-[500px] mx-auto">
                 {skills.map((skill, index) => (
                     <motion.div
                         key={index}
@@ -38,7 +38,7 @@ const SkillsNxt = () => {
                             delay: Math.random(),
                         }}
                     >
-                        <img className="h-16 w-16" src={skill.src} alt={skill.alt} />
+                        <div className="h-12 w-12 flex items-center justify-center"><img className="h-10 w-10 hover:rotate-12 transition" src={skill.src} alt={skill.alt} /></div>
                     </motion.div>
                 ))}
             </div>

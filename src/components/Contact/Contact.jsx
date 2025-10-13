@@ -21,7 +21,7 @@ const Contact = () => {
         };
 
         try {
-            const response = await fetch("http://localhost:5000/send-email", {
+            const response = await fetch("https://portfolio-server-xi-ten.vercel.app/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -129,8 +129,12 @@ const Contact = () => {
                             </label>
                         </div>
 
-                        <button disabled={loading} className="flex items-center justify-center gap-4 bg-gradient-to-r from-indigo-800 to-pink-800 hover:from-pink-800 hover:to-indigo-800 text-white py-2 w-full">{loading ? <span className="loading loading-spinner text-warning"></span>
-                            : <IoMdSend></IoMdSend>}Sent Message</button>
+                        <button
+                            disabled={loading}
+                            className="flex items-center justify-center gap-4 bg-gradient-to-r from-indigo-800 to-pink-800 hover:from-pink-800 hover:to-indigo-800 text-white py-2 w-full"
+                        >
+                            {loading ? (<span className="loading loading-spinner text-warning"></span>) : (<><IoMdSend />Send Message</>)}
+                        </button>
                     </form>
                 </div >
 
