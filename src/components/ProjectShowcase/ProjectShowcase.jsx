@@ -5,8 +5,8 @@ import { Link } from "react-router";
 
 const ProjectShowcase = () => {
     return (
-        <div className="mt-10">
-            <h3 className='text-center text-3xl md:text-5xl font-extrabold mb-16'>Projects Showcase<span className="text-pink-800 font-extrabold">_</span></h3>
+        <div className="md:mt-10">
+            <h3 className='text-center text-2xl md:text-4xl font-extrabold mb-16'>Projects Showcase<span className="text-pink-800 font-extrabold">_</span></h3>
 
             <div className="md:flex gap-5 mb-5">
                 {/* card-1  */}
@@ -31,16 +31,17 @@ const ProjectShowcase = () => {
                         </div>
 
                         <div className="flex gap-3 mt-4">
-                            <Link to={'https://zestora-restaurant-new.web.app'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
-                                <button className="text-white  py-2 flex justify-center items-center gap-2">Live View  <FaArrowUpRightFromSquare /></button>
-                            </Link>
-
                             <Link to={'https://github.com/Rakibul-Hasan270/zestora-restaurant-client-new'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
                                 <button className="text-white  py-2 flex justify-center items-center gap-2">Client <LuGithub /></button>
                             </Link>
 
                             <Link to={'https://github.com/Rakibul-Hasan270/zestora-restaurant-server-new'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
                                 <button className="text-white  py-2 flex justify-center items-center gap-2">Server <LuGithub /></button>
+                            </Link>
+                        </div>
+                        <div className="mt-4">
+                            <Link to={'https://zestora-restaurant-new.web.app'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
+                                <button className="text-white  py-2 flex justify-center items-center gap-2">Live View  <FaArrowUpRightFromSquare /></button>
                             </Link>
                         </div>
                     </div>
@@ -70,16 +71,17 @@ const ProjectShowcase = () => {
                         </div>
 
                         <div className="flex gap-3 mt-4">
-                            <Link to={'https://public-donation-list.web.app'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
-                                <button className="text-white  py-2 flex justify-center items-center gap-2">Live View  <FaArrowUpRightFromSquare /></button>
-                            </Link>
-
                             <Link to={'https://github.com/Rakibul-Hasan270/FundFlow_PDL_client'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
                                 <button className="text-white  py-2 flex justify-center items-center gap-2">Client <LuGithub /></button>
                             </Link>
 
                             <Link to={'https://github.com/Rakibul-Hasan270/FundFlow_PDL_server'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
                                 <button className="text-white  py-2 flex justify-center items-center gap-2">Server <LuGithub /></button>
+                            </Link>
+                        </div>
+                        <div className="mt-4">
+                            <Link to={'https://public-donation-list.web.app'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
+                                <button className="text-white  py-2 flex justify-center items-center gap-2">Live View  <FaArrowUpRightFromSquare /></button>
                             </Link>
                         </div>
                     </div>

@@ -17,8 +17,8 @@ const SkillsNxt = () => {
     ];
 
     return (
-        <div className="mt-32 mb-32">
-            <h3 className="text-center text-5xl font-extrabold mb-16">
+        <div className="my-20 md:my-32">
+            <h3 className="text-center text-2xl md:text-4xl font-extrabold mb-16">
                 Skills & Tools
                 <span className="text-pink-800 font-extrabold">_</span>
             </h3>

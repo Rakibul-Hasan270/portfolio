@@ -45,7 +45,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="my-32">
+        <div className="my-20 md:my-32">
             <h3 className='text-center text-3xl md:text-5xl font-extrabold mb-8'>Contact Me<span className="text-pink-800 font-extrabold">_</span></h3>
             <p className="text-center mb-20">I'm always open to discussing new projects,
                 <br />
