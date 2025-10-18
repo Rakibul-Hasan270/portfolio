@@ -65,7 +65,7 @@ const Contact = () => {
                         <p className="bg-gradient-to-r from-indigo-800 to-pink-800 p-3 text-2xl font-bold rounded-md text-white"><MdOutlinePhone /></p>
                         <div>
                             <p className="font-semibold">Phone</p>
-                            <p>+88 01917493197</p>
+                            <p>+88 01717255891</p>
                         </div>
                     </div>
                     <div className="flex gap-4">
@@ -85,7 +85,7 @@ const Contact = () => {
                                 id="name"
                                 name="from_name"
                                 placeholder=" "
-                                className="peer w-full text-pink-600 p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
+                                className="bg-white dark:bg-gray-900 mt-3 peer w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required
                             />
                             <label
@@ -101,7 +101,7 @@ const Contact = () => {
                                 id="email"
                                 name="from_email"
                                 placeholder=" "
-                                className="peer w-full p-3 pt-6 border text-pink-600 border-pink-800 rounded-md outline-none focus:border-gray-500"
+                                className="bg-white dark:bg-gray-900 mt-3 peer w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required
                             />
                             <label
@@ -117,7 +117,7 @@ const Contact = () => {
                                 id="message"
                                 name="message"
                                 placeholder=" "
-                                className="peer w-full text-pink-600 p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
+                                className="bg-white dark:bg-gray-900 mt-3 peer w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required
                             >
                             </textarea>

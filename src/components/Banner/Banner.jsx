@@ -28,7 +28,7 @@ const Banner = () => {
                     </div>
                 </div>
 
-                <p className="md:e-[700px] text-center md:text-start">Enthusiastic Jr. Web Developer skilled in creating dynamic, complex, and interactive web applications with innovative technologies.</p>
+                <p className="md:w-[700px] text-center md:text-start">Enthusiastic Jr. Web Developer skilled in creating dynamic, complex, and interactive web applications with innovative technologies.</p>
                 <div className="md:w-max">
                     <a href="/MERN_Stack_Developer_resume_of_Rakibul_Hasan.pdf" download={true}>
                         <button onClick={notify} className="mx-auto  md:ml-0 flex items-center gap-2 bg-gradient-to-r from-indigo-800 to-pink-800 hover:from-pink-800 hover:to-indigo-800 text-white px-4 py-2 rounded-lg">Resume <LuArrowDownToLine /></button>
