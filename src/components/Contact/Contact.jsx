@@ -85,7 +85,7 @@ const Contact = () => {
                                 id="name"
                                 name="from_name"
                                 placeholder=" "
-                                className="bg-white dark:bg-gray-900 mt-3 peer w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
+                                className="bg-gray-900 text-white mt-3 peer w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required
                             />
                             <label
@@ -101,7 +101,7 @@ const Contact = () => {
                                 id="email"
                                 name="from_email"
                                 placeholder=" "
-                                className="bg-white dark:bg-gray-900 mt-3 peer w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
+                                className="bg-gray-900 text-white mt-3 peer w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required
                             />
                             <label
@@ -117,7 +117,7 @@ const Contact = () => {
                                 id="message"
                                 name="message"
                                 placeholder=" "
-                                className="bg-white dark:bg-gray-900 mt-3 peer w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
+                                className="bg-gray-900 text-white mt-3 peer w-full p-3 pt-6 border border-pink-800 rounded-md outline-none focus:border-gray-500"
                                 required
                             >
                             </textarea>
@@ -137,7 +137,6 @@ const Contact = () => {
                         </button>
                     </form>
                 </div >
-
             </div >
         </div >
     );
