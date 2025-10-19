@@ -31,11 +31,11 @@ const ProjectShowcase = () => {
                         </div>
 
                         <div className="flex gap-3 mt-4">
-                            <Link to={'https://github.com/Rakibul-Hasan270/zestora-restaurant-client-new'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
+                            <Link to={'https://github.com/Rakibul-Hasan270/zestora-restaurant-client'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
                                 <button className="text-white  py-2 flex justify-center items-center gap-2">Client <LuGithub /></button>
                             </Link>
 
-                            <Link to={'https://github.com/Rakibul-Hasan270/zestora-restaurant-server-new'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
+                            <Link to={'https://github.com/Rakibul-Hasan270/zestora-restaurant-server'} className="w-full bg-gray-600 border hover:border-pink-800 hover:bg-gray-800 flex justify-center">
                                 <button className="text-white  py-2 flex justify-center items-center gap-2">Server <LuGithub /></button>
                             </Link>
                         </div>
